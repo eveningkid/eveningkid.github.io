@@ -1,0 +1,101 @@
+@font-face {
+	font-family: Starjedi;
+	src: url('Starjhol.ttf') format('TrueType');
+}
+
+body {
+	margin: 0;
+	text-align: center;
+	background-color: #111;
+	color: #FFFF00;	
+	font-family: 'Roboto', sans-serif;
+}
+
+noscript {
+	font-size: 20px;
+	font-weight: bold;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #000;
+	color: #fff;
+	padding-top: 20px;
+}
+
+#wrapper {
+	display:table;
+	width: 100%;
+}
+
+main {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+h1 {
+	font-family: Starjedi;
+	font-size: 40px;
+	margin: 0;
+}
+
+#reason-view {
+	display: none;
+}
+
+#reason-view #text {
+	font-size: 20px;
+}
+
+button {
+	border: 2px solid #FFFF00;
+	background-color: transparent;
+	padding: 10px;
+	color: #FFFF00;
+	transition: all .25s;
+	cursor: pointer;
+}
+
+button:hover, button:active {
+	background-color: #FFFF00;
+	color: #111;
+}
+
+img {
+	border: 3px double #FFFF00;
+}
+
+.highlighted {
+	padding:2px;
+	border-bottom: 2px solid #ED143D;
+	border-top: 2px solid #ED143D;
+	color: #ED143D;
+	cursor: pointer;
+}
+
+.highlighted:hover {
+	color: #fff;
+	background-color: #ED143D;
+}
+
+.highlighted:active {
+	color: #fff;
+	background-color: #DB183D;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 8px;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
