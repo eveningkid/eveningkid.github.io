@@ -94,8 +94,9 @@ footer {
 
 footer a {
 	text-decoration: none;
+	color: #fff;
 }
 
-footer a:hover {
+footer a:hover, footer a:active {
 	text-decoration: underline;
 }
