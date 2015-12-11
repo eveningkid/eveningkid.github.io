@@ -17,7 +17,7 @@ function gimme (lazyload, first) {
 	if (reasons.length) {
 
 		var main      = document.querySelector('#main'),
-			container = document.querySelector('#reason-view');
+		    container = document.querySelector('#reason-view');
 
 		if (!lazyload) {
 			if (!first)	reason = getReason();
@@ -27,7 +27,7 @@ function gimme (lazyload, first) {
 		}
 
 		container.querySelector('img').src = reason.img;
-		container.querySelector('p').innerText = reason.text;
+		container.querySelector('p').innerHTML = reason.text;
 
 	} else {
 		console.info("Oh, apparently, the reasons are not loaded yet. Please, keep waiting.");
