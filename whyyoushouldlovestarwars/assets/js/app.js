@@ -20,7 +20,7 @@ function getReason () {
 
 	return val || {
 		img: "https://media.giphy.com/media/pDTCmXCVXoMCY/giphy.gif",
-		text: "Because there is no other reason for now. Why don't give yours on Github?"
+		text: "Because there is no other reason for now. Why not giving yours on Github?"
 	};
 
 }
