@@ -1,0 +1,23 @@
+{
+  "name": "eveningkid.github.io",
+  "version": "1.0.0",
+  "description": "- [English version](//eveningkid.github.io) - [Version française](//eveningkid.github.io/index-fr.html)",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eveningkid/eveningkid.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eveningkid/eveningkid.github.io/issues"
+  },
+  "homepage": "https://github.com/eveningkid/eveningkid.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

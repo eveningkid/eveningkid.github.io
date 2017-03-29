@@ -1,4 +1,3 @@
-# eveningkid.github.io
+# Arnaud, or nono, or eveningkid
 
-- [English version](//eveningkid.github.io)
-- [Version française](//eveningkid.github.io/index-fr.html)
+[This should open the website](//eveningkid.github.io)
