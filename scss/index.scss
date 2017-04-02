@@ -34,15 +34,15 @@ header {
     background-position: top;
     padding: 40px;
     border-radius: 5px;
-  }
 
-  h1 {
-    margin: 0;
-    padding: 0;
-    border: 20px solid #fff;
-    font-size: 42px;
-    font-weight: 700;
-    position: relative;
+    h1 {
+      margin: 0;
+      padding: 0;
+      border: 20px solid #fff;
+      font-size: 42px;
+      font-weight: 700;
+      position: relative;
+    }
   }
 }
 
@@ -96,5 +96,43 @@ nav {
   to {
     opacity: 1;
     top: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    margin: 0;
+    border-radius: 0;
+    border-width: 15px;
+
+    #picture {
+      padding: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 0;
+
+      h1 {
+        font-size: 23px;
+        line-height: 23px;
+        padding: 30px;
+        border-width: 0px;
+      }
+    }
+  }
+
+  nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 }
