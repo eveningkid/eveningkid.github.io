@@ -16,6 +16,12 @@ h1 {
   font-size: 42px;
   font-weight: 700;
   margin-top: 80px;
+
+  #chinese {
+    &::before {
+      content: '／';
+    }
+  }
 }
 
 ul {
@@ -46,6 +52,16 @@ ul {
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity: 1;}
+}
+
+@media (max-width: 600px) {
+  #chinese {
+    display: block;
+
+    &::before {
+      content: '' !important;
+    }
+  }
 }
 
 /*
