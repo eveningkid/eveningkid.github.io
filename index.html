@@ -1,3 +1,13 @@
+
+
+
+
+
+<!-- TODO -->
+<!-- Voir pour faire un peu plus de responsive...:réduire la police -->
+
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,23 +15,173 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Arnaud Dellinger</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
-    <meta name="theme-color" content="#FF8A80">
-    <meta name="msapplication-navbutton-color" content="#FF8A80">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#FF8A80">
+    <meta name="theme-color" content="#7689f4">
+    <meta name="msapplication-navbutton-color" content="#7689f4">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#7689f4">
   </head>
 
   <body>
-    <div class="wrapper">
-      <h1>Dellinger<span id="chinese">迪阿諾</span></h1>
+    <div id="resume" class="short-resume">
+      <div class="short-resume__wrapper">
+        <h1>My Short and Boring Resume</h1>
+        <button class="no-border" onclick="toggleResume()">Close this</button>
 
-      <nav>
+        <p>
+          <strong>Arnaud Dellinger, 21 years old</strong><br />
+          <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/arnaud-dellinger">LinkedIn</a>
+          <a rel="noopener noreferrer" target="_blank" href="https://github.com/eveningkid">Github</a>
+          <a rel="noopener noreferrer" target="_blank" href="https://medium.com/@eveningkid">Medium</a>
+          <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/eveningkid">Twitter</a>
+          <a rel="noopener noreferrer" target="_blank" href="https://angel.co/eveningkid">Angel</a>
+        </p>
+
+        <h1>Programming</h1>
+        <div class="row">
+          <div class="col">
+            <h2>Back-end</h2>
+            <ul>
+              <li>Node.js <small>Express, Electron</small></li>
+              <li>Java <small>Android, Swing</small></li>
+              <li>Python <small>Flask</small></li>
+              <li>PHP <small>Laravel, CakePHP</small></li>
+              <li>Ruby ~ <small>Ruby on Rails</smalL></li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h2>Front-end</h2>
+            <ul>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>React Native</li>
+              <li>Angular 1.5</li>
+              <li>Sass/CSS</li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h2>Databases</h2>
+            <ul>
+              <li>SQL</li>
+              <li>GraphQL</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+        </div>
+
+        <h1>Languages</h1>
         <ul>
-          <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/eveningkid">Github</a></li>
-          <li><a target="_blank" rel="noopener noreferrer" href="https://medium.com/@eveningkid">Medium</a></li>
-          <li><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/eveningkid">Twitter</a></li>
-          <li><a target="_blank" rel="noopener noreferrer" href="./index-old.html">Old Portfolio</a></li>
+          <li>French <small>Native</small></li>
+          <li>English <small>C2 level (BULATS Cambridge English, score 93/100)</smalL></li>
+          <li>Spanish <small>B1 level</small></li>
+          <li>Chinese <small>B1 level (Chinese language HSK3 Certification, score 284/300)</small></li>
         </ul>
-      </nav>
-  </div>
+      </div>
+    </div>
+
+    <header class="block full-height align-center pointer" onclick="javascript:scrollToElement('#programming')">
+      <h1>I'm Arnaud,</h1>
+      <h2>here's a few things about me</h2>
+      <div class="next-section">Click anywhere to read</div>
+    </header>
+
+    <div class="bottom-block" id="short-version" onclick="toggleResume()">
+      <button>Read the short & boring version instead</button>
+    </div>
+
+    <section class="block full-height" id="programming">
+      <aside>
+        <h1>Front-end</h1>
+        <ul>
+          <li><a rel="noopener noreferrer" target="_blank" href="https://www.udemy.com/passez-au-javascript-moderne">JavaScript</a></li>
+          <li><a rel="noopener noreferrer" target="_blank" href="https://www.udemy.com/comprendre-et-creer-votre-application-reactjs">React</a></li>
+          <li>React Native</li>
+          <li>Angular 1.5</li>
+          <li>Sass/CSS</li>
+        </ul>
+
+        <h1>Back-end</h1>
+        <ul>
+          <li>Node.js <small>Express, Electron</small></li>
+          <li>Java <small>Android, Swing</small></li>
+          <li>Python <small>Flask</small></li>
+          <li>PHP <small>Laravel, CakePHP</small></li>
+          <li>Ruby ~ <small>Ruby on Rails</smalL></li>
+        </ul>
+
+        <h1>Databases</h1>
+        <ul>
+          <li>SQL</li>
+          <li>GraphQL</li>
+          <li>MongoDB</li>
+        </ul>
+      </aside>
+
+      <h1>Programming</h1>
+      <p>I always loved creating web applications, <span class="muted">starting with the 1st one when I was 8 — I'm 21 now.</span></p>
+      <p>Today, I usually do this using React.js which I started using ~ 3 years ago. <a href="javascript:toggleAside()">What else do I know?</a></p>
+      <ul class="list">
+        <li><a href="https://hskexam.com">HSKExam</a>, prepare the HSK exam</li>
+        <li><a href="https://eveningkid.github.io/pur/">Pur</a>, create pretty UI using React</li>
+        <li><a href="https://elpo.io">Elpo</a>, talk to your customers</a></li>
+        <li><a href="https://mailteach.me">MailTeach</a>, teach people using emails</li>
+      </ul>
+      <p>More of my projects are listed on <a class="external" rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/arnaud-dellinger/">my LinkedIn</a>.</p>
+    </section>
+
+    <section class="block full-height" id="teaching">
+      <h1>Teaching</h1>
+      <p>I recently released <a class="external" rel="noopener noreferrer" target="_blank" href="https://www.udemy.com/comprendre-et-creer-votre-application-reactjs">a Udemy course about React 👈</a> and another one about modern JavaScript syntax (both are in french).</p>
+      <p>I love sharing my knowledge and keeping it simple. This year I teached JavaScript to a 40yo+ mother.</p>
+      <p class="muted">Isn't it great? I mean, she was amazing.</p>
+    </section>
+
+    <section class="block full-height" id="languages">
+      <h1>Languages</h1>
+      <p>I speak English, French and I've been learning Spanish at school and German on my free-time.</p>
+      <p>
+        <img id="chambre-chinois" class="align-left" src="./assets/img/home/chambre-chinois.png" onclick="expandImage(document.querySelector('#chambre-chinois'));" />
+        I also learn Chinese 🇨🇳🇹🇼 on my own since slightly more than 2 years. <a href="javascript:void(0);" onclick="expandImage(document.querySelector('#chambre-chinois'));">This is how my bedroom looked</a> after the first week.
+      </p>
+      <p>
+        Earlier this year I had fun <a class="external" rel="noopener noreferrer" target="_blank" href="https://twitter.com/eveningkid/status/856579092354936834">translating a Silicon Valley S4 episode</a>.
+      </p>
+    </section>
+
+    <section class="block full-height" id="ending">
+      <p class="primary">
+        Joyful & keen to become a better developer,<br />
+        I sure believe in teamwork and great people.
+      </p>
+
+      <p>
+        Looking for an intern?
+        <a class="original" rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/arnaud-dellinger/">
+          <span id="reach-me">reach me out<span id="reach-me_message">You're doing the right thing</span></span>
+        </a>
+      </p>
+    </section>
+
+    <div class="bottom-block" id="social">
+      <a class="original" rel="noopener noreferrer" target="_blank" href="https://medium.com/@eveningkid">
+        <button>
+          <img src="./assets/img/home/medium.svg" /> Read my stories on Medium
+        </button>
+      </a>
+
+      <a class="original" rel="noopener noreferrer" target="_blank" href="https://github.com/eveningkid">
+        <button class="no-border">GitHub</button>
+      </a>
+
+      <a class="original" rel="noopener noreferrer" target="_blank" href="https://angel.co/eveningkid">
+        <button class="no-border">Angel</button>
+      </a>
+
+      <a class="original" rel="noopener noreferrer" target="_blank" href="https://twitter.com/eveningkid">
+        <button class="no-border">Twitter</button>
+      </a>
+    </div>
+
+    <script src="./assets/js/home.js"></script>
   </body>
 </html>
