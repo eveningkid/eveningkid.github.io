@@ -1,207 +1,183 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Arnaud DELLINGER</title>
-		
-		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Merriweather:400,300" />
-		<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
-		<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css" />
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arnaud Dellinger</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
+    <meta name="theme-color" content="#7689f4">
+    <meta name="msapplication-navbutton-color" content="#7689f4">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#7689f4">
+  </head>
 
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
-	<body>
+  <body>
+    <div id="resume" class="short-resume">
+      <div class="short-resume__wrapper">
+        <h1>My Short and Boring Resume</h1>
+        <button class="no-border" onclick="toggleResume()">Close this</button>
 
-		<noscript>
-			Please enable JavaScript in your browser. This is nothing more than a portfolio using a bit of unharmful JS! 
-		</noscript>
+        <p>
+          <strong>Arnaud Dellinger, 21 years old</strong><br />
+          <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/arnaud-dellinger">LinkedIn</a>
+          <a rel="noopener noreferrer" target="_blank" href="https://github.com/eveningkid">Github</a>
+          <a rel="noopener noreferrer" target="_blank" href="https://medium.com/@eveningkid">Medium</a>
+          <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/eveningkid">Twitter</a>
+          <a rel="noopener noreferrer" target="_blank" href="https://angel.co/eveningkid">Angel</a>
+        </p>
 
-		<div class="success">
-			Thank you! I will answer your message as soon as possible. Talk you soon!
-		</div>
+        <h1>Programming</h1>
+        <div class="row">
+          <div class="col">
+            <h2>Software & Back-end</h2>
+            <ul>
+              <li>Node.js <small>Express, Electron</small></li>
+              <li>Java <small>Android, Swing</small></li>
+              <li>Python <small>Flask</small></li>
+              <li>PHP <small>Laravel, CakePHP</small></li>
+              <li>Ruby ~ <small>Ruby on Rails</smalL></li>
+            </ul>
+          </div>
 
-		<header>
-			<h1>Dear <strong class="colored">Hirer</strong>,</h1>
+          <div class="col">
+            <h2>Front-end</h2>
+            <ul>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>React Native</li>
+              <li>Angular 1.5</li>
+              <li>Sass/CSS</li>
+            </ul>
+          </div>
 
-			<p>
-				My name is Arnaud Dellinger. I am a 19-year-old french developper, fond of programming since I'm 10.
-			</p>
+          <div class="col">
+            <h2>Databases</h2>
+            <ul>
+              <li>SQL</li>
+              <li>GraphQL</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+        </div>
 
-			<p id="jobs">
-				Front/Back-end Web Developer • Software Developer • UX Designer 
-			</p>
-		</header>
+        <h1>Languages</h1>
+        <ul>
+          <li>French <small>Native</small></li>
+          <li>English <small>C2 level (BULATS Cambridge English, score 93/100)</smalL></li>
+          <li>Spanish <small>B1 level</small></li>
+          <li>Chinese <small>B1 level (Chinese language HSK3 Certification, score 284/300)</small></li>
+        </ul>
+      </div>
+    </div>
 
-		<section id="code">
-			<p>
-				<i data-tt="HTML5" class="html5 devicon-html5-plain"></i>
-				<i data-tt="Sass" class="sass devicon-sass-plain"></i>
-				<i data-tt="Bootstrap" class="bootstrap devicon-bootstrap-plain"></i>
-				<i data-tt="ReactJS" class="react devicon-react-plain"></i>
-				<i data-tt="AngularJS" class="angular devicon-angularjs-plain"></i>
-				<i data-tt="Meteor" class="meteor devicon-meteor-plain"></i>
-				<i data-tt="Node.js" class="nodejs devicon-nodejs-plain"></i>
-				<i data-tt="Gulp" class="gulp devicon-gulp-plain"></i>
-				<i data-tt="PHP" class="php devicon-php-plain"></i>
-				<i data-tt="Laravel" class="laravel devicon-laravel-plain"></i>
-				<i data-tt="Python" class="python devicon-python-plain"></i>
-				<i data-tt="Java" class="java devicon-java-plain"></i>
-				<i data-tt="Go" class="go devicon-go-plain"></i>
-			</p>
-			<p>
-				(I really love all these tools, <strong class="underlined"><a href="//github.com/eveningkid/eveningkid.github.io/blob/master/about-me.md#skills" target="_blank">and others</a></strong>)
-			</p>
-		</section>
+    <header class="block full-height align-center pointer">
+      <h1>I'm Arnaud,</h1>
+      <h2>here's a few things about me</h2>
+    </header>
 
-		<section id="languages">
-			<img class="cloud" id="cloud-1" src="assets/img/cloud-1.png" />
+    <div class="bottom-block" id="short-version" onclick="toggleResume()">
+      <button>Read the short & boring version instead</button>
+    </div>
 
-			<p>
-				I can speak <strong>french</strong>, <strong>english</strong>, <strong>spanish</strong>, and <strong>traditional chinese</strong> is on the way for almost 4 months now.
-			</p>
-			<p>
-				I would love to settle in <strong class="colored" data-tt="Taiwan">台灣</strong> someday.
-			</p>
-		</section>
+    <section class="block full-height" id="programming">
+      <aside>
+        <h1>Front-end</h1>
+        <ul>
+          <li><a rel="noopener noreferrer" target="_blank" href="https://www.udemy.com/passez-au-javascript-moderne">JavaScript</a></li>
+          <li><a rel="noopener noreferrer" target="_blank" href="https://www.udemy.com/comprendre-et-creer-votre-application-reactjs">React</a></li>
+          <li>React Native</li>
+          <li>Angular 1.5</li>
+          <li>Sass/CSS</li>
+        </ul>
 
-		<div id="one-drawing"><img src="assets/img/drawings/up-min.jpg" /></div>
-		<section id="drawing" class="colored">
-			<div id="text">
-				<p>
-					Oh, I also draw a lot
-				</p>
-			
-				<button id="lets-see">Let's see what you got!</button>
-				
-				<p>
-					I could create presentation videos for you 
-					and even help with UX drawings!
-				</p>
-			</div>
+        <h1>Software & Back-end</h1>
+        <ul>
+          <li>Node.js <small>Express, Electron</small></li>
+          <li>Java <small>Android, Swing</small></li>
+          <li>Python <small>Flask</small></li>
+          <li>PHP <small>Laravel, CakePHP</small></li>
+          <li>Ruby ~ <small>Ruby on Rails</smalL></li>
+        </ul>
 
-			<div id="view">
-				<div style="background-image: url('assets/img/drawings/up-min.jpg')"></div>
-				<div style="background-image: url('assets/img/drawings/buzz-min.jpg')"></div>
-				<div style="background-image: url('assets/img/drawings/bighero-min.jpg')"></div>
-				<div style="background-image: url('assets/img/drawings/totoro-min.jpg')"></div>
-			</div>
-		</section>
+        <h1>Databases</h1>
+        <ul>
+          <li>SQL</li>
+          <li>GraphQL</li>
+          <li>MongoDB</li>
+        </ul>
+      </aside>
 
-		<section id="done">
-			<h1>
-				Here is a summary of my personal projects<br />
-				<strong class="underlined"><a href="//github.com/eveningkid/eveningkid.github.io/blob/master/about-me.md#personal-projects" target="_blank">(or a detailed version)</a></strong>
-			</h1>
+      <h1>Programming</h1>
+      <p>I always loved creating web applications, <span class="muted">starting with the 1st one when I was 8 — I'm 21 now.</span></p>
+      <p>Today, I usually do this using React.js which I started using ~ 3 years ago. <a href="javascript:toggleAside()">What else do I know?</a></p>
+      <ul class="list">
+        <li><a href="https://hskexam.com">HSKExam</a>, prepare the HSK exam</li>
+        <li><a href="https://elpo.io">Elpo</a>, talk to your customers</a></li>
+        <li><a href="https://mailteach.me">MailTeach</a>, teach people using emails</li>
+      </ul>
+      <p>More of my projects are listed on <a class="external" rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/arnaud-dellinger/">my LinkedIn</a>.</p>
+    </section>
 
-			<ul>				
-				<li style="background-image: url('assets/img/projects/wop.png')">
-					<div>
-						<h1>WoP (2011-2013)</h1>
-						<h2>HTML/CSS, JS, PHP</h2>
-						<p>
-							Multiplayer browser game based on the Pokémon universe.
-						</p>
-					</div>
-				</li>
-				<li style="background-image: url('assets/img/projects/kodder.png')">
-					<div>
-						<h1>Kodder (2014)</h1>
-						<h2>HTML/CSS, JS, PHP</h2>
-						<p>
-							Local IDE, and learning platform.
-						</p>
-					</div>
-				</li>
-				<li style="background-image: url('assets/img/projects/mony.png')">
-					<div>
-						<h1>Mony (2014)</h1>
-						<h2>HTML/CSS, JS, Ionic (AngularJS/Cordova)</h2>
-						<p>
-							Android application, debt manager between friends.
-						</p>
-					</div>
-				</li>
-				<li style="background-image: url('assets/img/projects/gcast.png')">
-					<div>
-						<h1>gCast (2015)</h1>
-						<h2>HTML/CSS, JS, Meteor, AngularJS</h2>
-						<p>
-							Website helping new casters to find more audience, both on Youtube and Twitch.
-						</p>
-					</div>
-				</li>
-				<li style="background-image: url('assets/img/projects/wyslsw.png')">
-					<div>
-						<h1>Why You Shoud Love Star Wars (2015)</h1>
-						<h2>HTML/CSS, JS</h2>
-						<p>
-							Open-source project, sharing good reasons to love Star Wars movies.
-						</p>
-					</div>
-				</li>
-				<li style="background-image: url('assets/img/projects/kodder2.png')">
-					<div>
-						<h1>Kodder2 (2015)</h1>
-						<h2>HTML/CSS, JS, Meteor, ReactJS</h2>
-						<p>
-							Future open-source project, only based on learning with others.
-						</p>
-					</div>
-				</li>
-			</ul>
-		</section>
+    <section class="block full-height" id="teaching">
+      <h1>Teaching</h1>
+      <p>I recently released <a class="external" rel="noopener noreferrer" target="_blank" href="https://www.udemy.com/comprendre-et-creer-votre-application-reactjs">a Udemy course about React 👈</a> and another one about modern JavaScript syntax (both are in french).</p>
+      <p>I love sharing my knowledge and keeping it simple. This year I teached JavaScript to a 40yo+ mother.</p>
+      <p class="muted">Isn't it great? I mean, she was amazing.</p>
+    </section>
 
-		<section id="me">
-			<p>
-				Joyful, creative, and <strong class="colored">keen to become a better developer</strong>.
-			</p>
-			<p>
-				I sure believe in teamwork, and great people.
-			</p>
+    <section class="block full-height" id="languages">
+      <h1>Languages</h1>
+      <p>I speak English, French and I've been learning Spanish at school and German on my free-time.</p>
+      <p>
+        <img id="chambre-chinois" class="align-left" src="./assets/img/home/chambre-chinois.png" onclick="expandImage(document.querySelector('#chambre-chinois'));" />
+        I also learn Chinese 🇨🇳🇹🇼 on my own since slightly more than 2 years. <a href="javascript:void(0);" onclick="expandImage(document.querySelector('#chambre-chinois'));">This is how my bedroom looked</a> after the first week.
+      </p>
+      <p>
+        Earlier this year I had fun <a class="external" rel="noopener noreferrer" target="_blank" href="https://twitter.com/eveningkid/status/856579092354936834">translating a Silicon Valley S4 episode</a>.
+      </p>
+    </section>
 
-			<div style="width: 100%; margin-top: 80px;">
-				<div id="bb8-head"></div>
-				<div id="bb8"></div>
-			</div>
-			<div class="clear"></div>
-		</section>
+    <section class="block full-height" id="ending">
+      <p class="primary">
+        Joyful & keen to become a better developer,<br />
+        I sure believe in teamwork and great people.
+      </p>
 
-		<section id="internship" class="colored dark">
-			<p>
-				I am looking for an internship in Taiwan, from <strong>April 4<sup>th</sup> to June 13<sup>th</sup></strong>.
-			</p>
-			<p>
-				We could work together, what do you say?
-			</p>
-			<button id="contact-internship">Let's try!</button>
-		</section>
+      <p>
+        Looking for an intern?
+        <a class="original" rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/arnaud-dellinger/">
+          <span id="reach-me">reach me out<span id="reach-me_message">You're doing the right thing</span></span>
+        </a>
+      </p>
+    </section>
 
-		<section class="colored">
-			<h1>Want more?</h1>
-			<p>
-				Give a try to my <a target="_blank" href="//twitter.com/eveningkid">twitter</a>, <a target="_blank" href="//github.com/eveningkid">github</a> accounts.
-			</p>
-			<p class="small">
-				(or <a href="javascript:void(0)" id="contact">write me directly</a>)
-			</p>
-		</section>
+    <div class="bottom-block" id="social">
+      <a class="original" rel="noopener noreferrer" target="_blank" href="https://medium.com/@eveningkid">
+        <button>
+          <img src="./assets/img/home/medium.svg" /> Read my stories on Medium
+        </button>
+      </a>
 
-		<form method="POST" action="//kodder.fr/portfolio/contact.php">
-			<span>&uarr; Close this window</span>
+      <a class="original" rel="noopener noreferrer" target="_blank" href="https://github.com/eveningkid">
+        <button class="no-border">GitHub</button>
+      </a>
 
-			<p>
-				Please fill the fields down below so I could get back to you as soon as possible!
-			</p>
+      <a class="original" rel="noopener noreferrer" target="_blank" href="https://angel.co/eveningkid">
+        <button class="no-border">Angel</button>
+      </a>
 
-			<input type="email" placeholder="Your email address" name="from" required />
-			<input type="text" placeholder="Subject" name="subject" required />
-			<textarea rows="8" name="message" placeholder="Your beautiful message" required></textarea>
-			<input type="submit" value="Send it!" />
-		</form>
+      <a class="original" rel="noopener noreferrer" target="_blank" href="https://twitter.com/eveningkid">
+        <button class="no-border">Twitter</button>
+      </a>
+    </div>
 
+    <script src="./assets/js/home.js"></script>
 
-		<script src="http://zeptojs.com/zepto.js"></script>
-		<script src="assets/js/zepto.plugins.js"></script>
-		<script src="assets/js/main.js"></script>
-	</body>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84366865-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-84366865-4');
+    </script>
+  </body>
 </html>
